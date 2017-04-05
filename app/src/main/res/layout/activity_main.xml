@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/RootLayoutId"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.example.a1405214.crazyimage.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/RootLayoutId1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/RootLayoutId2"
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:background="#000"
+                    android:gravity="start"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="wrap_content">
+
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+
+                            <ImageView
+                                android:id="@+id/car"
+                                android:layout_width="300dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/car1" />
+
+                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/Image1"
+                                android:layout_width="50dp"
+                                android:layout_height="50dp"
+                                android:layout_marginLeft="32dp"
+                                android:layout_marginTop="100dp"
+                                android:background="@drawable/wheels"
+                                app:civ_border_color="#FF000000"
+                                app:civ_border_width="2dp" />
+
+                            <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                android:id="@+id/Image2"
+                                android:layout_width="52dp"
+                                android:layout_height="52dp"
+                                android:layout_marginLeft="192dp"
+                                android:layout_marginTop="100dp"
+                                android:background="@drawable/wheels"
+                                app:civ_border_color="#FF000000"
+                                app:civ_border_width="2dp" />
+
+
+                        </FrameLayout>
+
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:background="#fff"
+                                android:id="@+id/RootId123"
+                                android:gravity="center|bottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <ImageView
+                                    android:id="@+id/ID123ID"
+                                    android:layout_width="80dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="80dp" />
+
+
+                            </LinearLayout>
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:weightSum="100"
+                        android:id="@+id/RainRootLayout"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="50"
+                            android:orientation="horizontal"
+                            android:layout_height="200dp">
+
+
+                                <ImageView
+                                    android:layout_width="10dp"
+                                    android:id="@+id/rain1"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:layout_width="10dp"
+                                    android:id="@+id/rain2"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:layout_width="10dp"
+                                    android:id="@+id/rain3"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain4"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain5"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain6"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:layout_width="10dp"
+                                    android:id="@+id/rain7"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain8"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain9"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain10"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain11"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain12"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain13"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain14"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain15"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain16"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain17"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain18"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+
+
+                           <!-- <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="10dp"
+                                    android:id="@+id/rain21"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:layout_width="10dp"
+                                    android:id="@+id/rain22"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:layout_width="10dp"
+                                    android:id="@+id/rain23"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain24"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain25"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain26"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:layout_width="10dp"
+                                    android:id="@+id/rain27"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain28"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain29"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain210"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain211"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain212"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain213"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain214"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain215"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain216"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain217"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain218"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="10dp"
+                                    android:id="@+id/rain31"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:layout_width="10dp"
+                                    android:id="@+id/rain32"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:layout_width="10dp"
+                                    android:id="@+id/rain33"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain34"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain35"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain36"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:layout_width="10dp"
+                                    android:id="@+id/rain37"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain38"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain39"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain310"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain311"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain312"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain313"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain314"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain315"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain316"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain317"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain318"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <ImageView
+                                    android:layout_width="10dp"
+                                    android:id="@+id/rain41"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:layout_width="10dp"
+                                    android:id="@+id/rain42"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:layout_width="10dp"
+                                    android:id="@+id/rain43"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain44"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain45"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain46"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:layout_width="10dp"
+                                    android:id="@+id/rain47"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain48"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain49"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain410"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain411"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain412"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain413"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain414"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain415"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain416"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain417"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+                                <ImageView
+                                    android:id="@+id/rain418"
+                                    android:layout_width="10dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="10dp" />
+
+
+                            </LinearLayout> -->
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/RotateFixed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rotate" />
+
+                <Button
+                    android:id="@+id/RotateBy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ROTATEIMAGEBY" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Encode64"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Encode BASE64" />
+
+                <Button
+                    android:id="@+id/QRcodeencode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOSSLESS COMPRESSION" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+
+                    android:id="@+id/GetScaledImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get Scaled Images" />
+
+                <Button
+                    android:id="@+id/GetCustomScaledImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CustomizedSize" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/scaledImages"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Get Custom Scaled Images" />
+
+                <Button
+                    android:id="@+id/RotateAntiClock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="RotateAntiClock" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Oscillate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Oscillation" />
+
+                <Button
+                    android:id="@+id/customOscillation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Custom Oscillation" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/StopCrazyRotation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="StopCrazyRotation" />
+
+                <Button
+                    android:id="@+id/StopCrazyRotationAtCustomAngle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Stop Rotation At custom angle" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/TranslateX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TranslateX" />
+
+                <Button
+                    android:id="@+id/Bounce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BOUNCE" />
+
+                <Button
+                    android:id="@+id/BlackandWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BNW" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:text="Rain"
+                    android:id="@+id/RainStart"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
