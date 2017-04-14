@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/CrazyImage.iml" filepath="$PROJECT_DIR$/CrazyImage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FriskyImage.iml" filepath="$PROJECT_DIR$/FriskyImage.iml" />
       <module fileurl="file://$PROJECT_DIR$/FriskyImage/FriskyImage.iml" filepath="$PROJECT_DIR$/FriskyImage/FriskyImage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FriskyImage/FriskyImage-FriskyImage.iml" filepath="$PROJECT_DIR$/FriskyImage/FriskyImage-FriskyImage.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>

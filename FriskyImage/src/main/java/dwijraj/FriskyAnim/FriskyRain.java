@@ -12,20 +12,14 @@ import java.util.ArrayList;
  * Created by 1405214 on 02-04-2017.
  */
 
-public class FriskyRain {
+public  class FriskyRain  {
 
-    private Activity activity;
     private Runnable runnable1[];
     private Runnable runnable2[];
     private float PosX[];
     private float PosY[];
-    public FriskyRain(Activity activity)
+    public void StartRain(ArrayList<Integer> ViewIds, int ParentViewID, final float RainDirection,Activity activity)
     {
-        this.activity=activity;
-    }
-    public void StartRain(ArrayList<Integer> ViewIds, int ParentViewID, final float RainDirection)
-    {
-
         int length=ViewIds.size()-1;
 
         final  View ParentView=activity.findViewById(ParentViewID);
@@ -52,8 +46,6 @@ public class FriskyRain {
         final   float MarginLeft=marginLayoutParams.leftMargin;
         final   float MarginRight=marginLayoutParams.rightMargin;
 
-     //   Log.v("TAG",view.getId()+",");
-
         for(int i=0;i<=length;i++) {
             final int a = i;
 
@@ -61,8 +53,6 @@ public class FriskyRain {
 
 
 
-
-            Log.v("TAGViewIDs", view1.getId() + ",");
 
               runnable2[i]=new Runnable() {
                 @Override
@@ -84,15 +74,6 @@ public class FriskyRain {
             view1.animate().translationXBy(RainDirection).translationYBy((ParentView.getY()+ParentView.getHeight()-MarginBottom)-view1.getY()).setDuration(3000).withEndAction(runnable1[i]).setInterpolator(new LinearInterpolator()).start();
 
         }
-
-
-
-
-
-
-
-
-
     }
 
 }

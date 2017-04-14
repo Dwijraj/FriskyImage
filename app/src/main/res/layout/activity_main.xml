@@ -32,13 +32,15 @@
                     android:orientation="vertical">
 
                     <LinearLayout
+                        android:weightSum="100"
                         android:layout_width="match_parent"
                         android:orientation="horizontal"
                         android:layout_height="wrap_content">
 
 
                         <FrameLayout
-                            android:layout_width="wrap_content"
+                            android:layout_weight="50"
+                            android:layout_width="0dp"
                             android:layout_height="wrap_content">
 
 
@@ -72,7 +74,8 @@
                         </FrameLayout>
 
                         <LinearLayout
-                            android:layout_width="fill_parent"
+                            android:layout_weight="50"
+                            android:layout_width="0dp"
                             android:layout_height="match_parent">
 
                             <LinearLayout
@@ -104,6 +107,7 @@
                         android:layout_height="wrap_content">
 
                         <LinearLayout
+                            android:id="@+id/Root1235"
                             android:layout_width="0dp"
                             android:layout_weight="50"
                             android:orientation="horizontal"
@@ -200,304 +204,62 @@
                                     android:layout_width="10dp"
                                     android:background="@drawable/wheels"
                                     android:layout_height="10dp" />
-
-
-                           <!-- <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <ImageView
-                                    android:layout_width="10dp"
-                                    android:id="@+id/rain21"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:layout_width="10dp"
-                                    android:id="@+id/rain22"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:layout_width="10dp"
-                                    android:id="@+id/rain23"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain24"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain25"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain26"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:layout_width="10dp"
-                                    android:id="@+id/rain27"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain28"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain29"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain210"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain211"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain212"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain213"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain214"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain215"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain216"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain217"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain218"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-
-
-                            </LinearLayout>
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <ImageView
-                                    android:layout_width="10dp"
-                                    android:id="@+id/rain31"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:layout_width="10dp"
-                                    android:id="@+id/rain32"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:layout_width="10dp"
-                                    android:id="@+id/rain33"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain34"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain35"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain36"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:layout_width="10dp"
-                                    android:id="@+id/rain37"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain38"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain39"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain310"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain311"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain312"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain313"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain314"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain315"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain316"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain317"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain318"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-
-
-                            </LinearLayout>
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content">
-
-                                <ImageView
-                                    android:layout_width="10dp"
-                                    android:id="@+id/rain41"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:layout_width="10dp"
-                                    android:id="@+id/rain42"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:layout_width="10dp"
-                                    android:id="@+id/rain43"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain44"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain45"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain46"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:layout_width="10dp"
-                                    android:id="@+id/rain47"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain48"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain49"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain410"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain411"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain412"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain413"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain414"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain415"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain416"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain417"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-                                <ImageView
-                                    android:id="@+id/rain418"
-                                    android:layout_width="10dp"
-                                    android:background="@drawable/wheels"
-                                    android:layout_height="10dp" />
-
-
-                            </LinearLayout> -->
-
-
-
-
                         </LinearLayout>
+                        <FrameLayout
+                            android:layout_width="0dp"
+                            android:layout_weight="50"
+                            android:layout_gravity="center|bottom"
+                            android:layout_height="match_parent">
+
+                            <LinearLayout
+                                android:gravity="center|bottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <ImageView
+                                    android:id="@+id/ID1234ID"
+                                    android:layout_width="80dp"
+                                    android:background="@drawable/wheels"
+                                    android:layout_height="80dp" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:gravity="center|bottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <ImageView
+                                    android:id="@+id/ID1235ID"
+                                    android:layout_width="80dp"
+                                    android:background="@mipmap/ic_launcher_round"
+                                    android:layout_height="80dp" />
+
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:gravity="center|bottom"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+
+                                <ImageView
+                                    android:id="@+id/ID1236ID"
+                                    android:layout_width="80dp"
+                                    android:background="@drawable/call"
+                                    android:layout_height="80dp" />
+
+
+                            </LinearLayout>
+
+
+                        </FrameLayout>
 
 
 
@@ -677,6 +439,11 @@
                     android:layout_width="wrap_content"
                     android:text="Rain"
                     android:id="@+id/RainStart"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:layout_width="wrap_content"
+                    android:id="@+id/random_view"
+                    android:text="MIXPLAY"
                     android:layout_height="wrap_content" />
 
             </LinearLayout>

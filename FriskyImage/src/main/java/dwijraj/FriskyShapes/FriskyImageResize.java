@@ -38,7 +38,7 @@ public abstract class FriskyImageResize {
         return Scaled_Bitmap;
 
     }
-    public static  Bitmap ResizeImage(Bitmap bitmap,int Width,int Height)
+    public static  Bitmap FriskyResizeImage(Bitmap bitmap,int Width,int Height)
     {
         Bitmap bitmap1=bitmap;
 
@@ -71,7 +71,7 @@ public abstract class FriskyImageResize {
 
 
     }
-    public static Bitmap  CrazycompressImage(String imageUri,Activity activity1,float MaxHeight,float MaxWidth) {
+    public static Bitmap  FriskycompressImage(String imageUri,Activity activity1,float MaxHeight,float MaxWidth) {
 
         activity=activity1;
         String filePath = getRealPathFromURI(imageUri);
@@ -79,8 +79,6 @@ public abstract class FriskyImageResize {
 
         BitmapFactory.Options options = new BitmapFactory.Options();
 
-//		by setting this field as true, the actual bitmap pixels are not loaded in the memory. Just the bounds are loaded. If
-//		you try the use the bitmap here, you will get null.
         options.inJustDecodeBounds = true;
         Bitmap bmp = BitmapFactory.decodeFile(filePath, options);
 
@@ -97,7 +95,11 @@ public abstract class FriskyImageResize {
 //		width and height values are set maintaining the aspect ratio of the image
 
         if (actualHeight > maxHeight || actualWidth > maxWidth) {
-            if (imgRatio < maxRatio) { 				imgRatio = maxHeight / actualHeight; 				actualWidth = (int) (imgRatio * actualWidth); 				actualHeight = (int) maxHeight; 			} else if (imgRatio > maxRatio) {
+            if (imgRatio < maxRatio)
+            {   imgRatio = maxHeight / actualHeight;
+                actualWidth = (int) (imgRatio * actualWidth);
+                actualHeight = (int) maxHeight;
+            } else if (imgRatio > maxRatio) {
                 imgRatio = maxWidth / actualWidth;
                 actualHeight = (int) (imgRatio * actualHeight);
                 actualWidth = (int) maxWidth;
@@ -108,20 +110,13 @@ public abstract class FriskyImageResize {
             }
         }
 
-//		setting inSampleSize value allows to load a scaled down version of the original image
-
         options.inSampleSize = calculateInSampleSize(options, actualWidth, actualHeight);
-
-//		inJustDecodeBounds set to false to load the actual bitmap
         options.inJustDecodeBounds = false;
-
-//		this options allow android to claim the bitmap memory if it runs low on memory
         options.inPurgeable = true;
         options.inInputShareable = true;
         options.inTempStorage = new byte[16 * 1024];
 
         try {
-//			load the bitmap from its path
             bmp = BitmapFactory.decodeFile(filePath, options);
         } catch (OutOfMemoryError exception) {
             exception.printStackTrace();
@@ -145,7 +140,6 @@ public abstract class FriskyImageResize {
         canvas.setMatrix(scaleMatrix);
         canvas.drawBitmap(bmp, middleX - bmp.getWidth() / 2, middleY - bmp.getHeight() / 2, new Paint(Paint.FILTER_BITMAP_FLAG));
 
-//		check the rotation of the image and display it properly
         ExifInterface exif;
         try {
             exif = new ExifInterface(filePath);

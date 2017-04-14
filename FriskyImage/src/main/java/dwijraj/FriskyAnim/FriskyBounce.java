@@ -416,7 +416,7 @@ public class FriskyBounce {
 
               // View.animate().translationXBy(60*DP).y((Rootview.getY()+Rootview.getHeight()-MarginBottom-View.getHeight())).withEndAction(runnable2).setDuration(3000).setInterpolator(new LinearInterpolator()).start();
 
-               if(View.getX()>Rootview.getX()+Rootview.getWidth()-MarginLeft)
+               if((View.getX()+View.getWidth())>Rootview.getX()+Rootview.getWidth()-MarginLeft)
                {
                    FLAG1="LEFT";
                    View.animate().y(0).translationXBy(-60*DP).withEndAction(runnable3).setDuration(TimeToTravelUp).setInterpolator(new LinearInterpolator()).start();
