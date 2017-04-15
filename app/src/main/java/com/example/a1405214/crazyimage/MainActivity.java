@@ -4,9 +4,15 @@ import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.animation.AlphaAnimation;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.view.animation.LinearInterpolator;
 import android.widget.Button;
 import android.widget.GridLayout;
 import android.widget.GridView;
@@ -17,13 +23,14 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import dwijraj.FriskyAnim.FriskyBounce;
+import dwijraj.FriskyAnim.FriskyFade;
 import dwijraj.FriskyAnim.FriskyRain;
 import dwijraj.FriskyAnim.FriskyTanslations;
 
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button FixedRotatedImage;
+    private Button Fade;
     private Button SetImageRotating;
     private Button GetScaledImages;
     public  ImageView Image;
@@ -52,13 +59,29 @@ public class MainActivity extends AppCompatActivity {
         layout=(LinearLayout) findViewById(R.id.RootLayoutId);
         Image=(ImageView) findViewById(R.id.Image1);
 
-        FixedRotatedImage=(Button) findViewById(R.id.RotateFixed);
+
+
+
+
+
+        Fade=(Button) findViewById(R.id.fade);
         RotateBy=(Button) findViewById(R.id.RotateBy);
-        FixedRotatedImage.setOnClickListener(new View.OnClickListener() {
+        Fade.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
+                int Ids[]={R.drawable.barcode,R.drawable.call,R.drawable.car1,R.drawable.car2};
+                Bitmap bitmap1[]=new Bitmap[4];
 
+                bitmap1[0]=BitmapFactory.decodeResource(MainActivity.this.getResources(),Ids[0]);
+
+                bitmap1[1]=BitmapFactory.decodeResource(MainActivity.this.getResources(),Ids[1]);
+
+                bitmap1[2]=BitmapFactory.decodeResource(MainActivity.this.getResources(),Ids[2]);
+
+                bitmap1[3]=BitmapFactory.decodeResource(MainActivity.this.getResources(),Ids[3]);
+
+                FriskyFade.StopOnLastElement(bitmap1,MainActivity.this,R.id.FadeLayout,5000);
 
             }
         });
@@ -67,7 +90,17 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
+                Runnable runnable1=new Runnable() {
+                    @Override
+                    public void run() {
 
+                        Image.animate().alpha(1).setDuration(3000).setInterpolator(new LinearInterpolator()).start();
+
+                    }
+                };
+
+
+              Image.animate().alpha(0).setDuration(3000).setInterpolator(new LinearInterpolator()).withEndAction(runnable1).start();
             }
         });
         Base64Encode.setOnClickListener(new View.OnClickListener() {

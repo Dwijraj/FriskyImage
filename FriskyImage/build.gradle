@@ -1,5 +1,27 @@
 apply plugin: 'com.android.library'
+ext {
+    bintrayRepo = 'maven'
+    bintrayName = 'FriskyImage'
 
+    publishedGroupId = 'dwijrajbhattacharyya.FriskyImage'
+    libraryName = 'FBLike'
+    artifact = 'FriskyImage'
+
+    libraryDescription = 'A wrapper for Facebook Native Like Button (LikeView) on Android'
+
+    siteUrl = 'https://github.com/Dwijraj/FriskyImage'
+    gitUrl = 'https://github.com/Dwijraj/FriskyImage.git'
+
+    libraryVersion = '1.0.1'
+
+    developerId = 'dwijrajbhattacharyya'
+    developerName = 'Dwijraj Bhattacharyya'
+    developerEmail = 'dwijrajbhattacharyya@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.2"
@@ -27,5 +49,9 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.3.0'
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'io.reactivex:rxjava:1.1.0'
     testCompile 'junit:junit:4.12'
 }
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'

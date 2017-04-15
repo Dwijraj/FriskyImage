@@ -11,6 +11,7 @@ import android.media.ExifInterface;
 import android.net.Uri;
 import android.provider.MediaStore;
 
+import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 
 /**
@@ -20,57 +21,6 @@ import java.io.IOException;
 public abstract class FriskyImageResize {
 
     private static Activity activity;
-    public static Bitmap[] FixscaledImages(Bitmap bitmap)
-    {
-        Bitmap Scaled_Bitmap[]=new Bitmap[4];
-
-        int Image_Width=bitmap.getWidth();
-        int image_height=bitmap.getHeight();
-
-
-        Scaled_Bitmap[0]=Bitmap.createScaledBitmap(bitmap,150,150,false);
-        Scaled_Bitmap[1]=Bitmap.createScaledBitmap(bitmap,350,350,false);
-        Scaled_Bitmap[2]=Bitmap.createScaledBitmap(bitmap,250,250,false);
-        Scaled_Bitmap[3]=Bitmap.createScaledBitmap(bitmap,50,50,false);
-
-
-
-        return Scaled_Bitmap;
-
-    }
-    public static  Bitmap FriskyResizeImage(Bitmap bitmap,int Width,int Height)
-    {
-        Bitmap bitmap1=bitmap;
-
-        bitmap1=Bitmap.createScaledBitmap(bitmap,Width,Height,false);
-
-        return bitmap1;
-
-    }
-
-    public static Bitmap GetScaledImage(Bitmap bitmap,int ScaleX,int ScaleY )
-    {
-        Bitmap result=null;
-
-        int Image_Width=bitmap.getWidth();
-        int image_height=bitmap.getHeight();
-
-        if(ScaleX>Image_Width||ScaleY>image_height)
-        {
-            return null;
-        }
-        else
-        {
-            int ScaledX=Image_Width/ScaleX;
-            int ScaledY=image_height/ScaleY;
-
-            result= Bitmap.createScaledBitmap(bitmap,ScaledX,ScaledY,false);
-
-            return result;
-        }
-
-
-    }
     public static Bitmap  FriskycompressImage(String imageUri,Activity activity1,float MaxHeight,float MaxWidth) {
 
         activity=activity1;

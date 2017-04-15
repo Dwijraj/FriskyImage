@@ -26,7 +26,7 @@
                 <LinearLayout
                     android:id="@+id/RootLayoutId2"
                     android:layout_width="match_parent"
-                    android:layout_height="400dp"
+                    android:layout_height="600dp"
                     android:background="#000"
                     android:gravity="start"
                     android:orientation="vertical">
@@ -264,6 +264,27 @@
 
 
                     </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:weightSum="100"
+                        android:layout_height="200dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="100"
+                            android:id="@+id/FadeLayout"
+                            android:layout_height="200dp">
+
+
+
+                        </LinearLayout>
+
+
+
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
@@ -294,10 +315,10 @@
                 android:gravity="center">
 
                 <Button
-                    android:id="@+id/RotateFixed"
+                    android:id="@+id/fade"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Rotate" />
+                    android:text="fade" />
 
                 <Button
                     android:id="@+id/RotateBy"
