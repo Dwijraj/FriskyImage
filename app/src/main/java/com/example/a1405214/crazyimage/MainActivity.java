@@ -81,7 +81,9 @@ public class MainActivity extends AppCompatActivity {
 
                 bitmap1[3]=BitmapFactory.decodeResource(MainActivity.this.getResources(),Ids[3]);
 
-                FriskyFade.StopOnLastElement(bitmap1,MainActivity.this,R.id.FadeLayout,5000);
+
+                new FriskyFade().InfiniteRepeat
+                        (bitmap1,MainActivity.this,R.id.FadeLayout,5000);
 
             }
         });

@@ -274,6 +274,7 @@
                             android:layout_width="match_parent"
                             android:orientation="horizontal"
                             android:weightSum="100"
+                            android:background="@drawable/barcode"
                             android:id="@+id/FadeLayout"
                             android:layout_height="200dp">
 

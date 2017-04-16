@@ -13,17 +13,23 @@ import android.widget.ImageView;
  * Created by 1405214 on 16-04-2017.
  */
 
-public abstract class FriskyFade {
+public  class FriskyFade {
 
 
-    private static Runnable runnable1,runnable2;
-    private static int LAST_FLAG_VALUE;
-    private static int FLAG=0;
-    private static Drawable drawable[];
-    private static View view;
+    private  Runnable runnable1,runnable2;
+    private  int LAST_FLAG_VALUE;
+    private  int FLAG;//=0;
+    private  static Drawable drawable[];
+    private  View view;
+
+    public FriskyFade()
+    {
+        this.FLAG=0;
+    }
 
 
-    public static void StopOnLastElement(Drawable drawables[],Activity activity,int IdOfView,int Duration)
+
+    public  void StopOnLastElement(Drawable drawables[],Activity activity,int IdOfView,int Duration)
     {
 
         LAST_FLAG_VALUE=drawables.length;
@@ -32,7 +38,7 @@ public abstract class FriskyFade {
         StopOnLastElementExecute(drawable,Duration);
     }
 
-    public static void StopOnLastElement(Bitmap bitmap[], Activity activity, int IdOfView, final int Duration)
+    public  void StopOnLastElement(Bitmap bitmap[], Activity activity, int IdOfView, final int Duration)
     {
         LAST_FLAG_VALUE=bitmap.length;
         view=activity.findViewById(IdOfView);
@@ -45,7 +51,7 @@ public abstract class FriskyFade {
     }
 
 
-    public static void InfiniteRepeat(Drawable drawables[],Activity activity,int IdOfView,int Duration)
+    public  void InfiniteRepeat(Drawable drawables[],Activity activity,int IdOfView,int Duration)
     {
 
         LAST_FLAG_VALUE=drawables.length;
@@ -54,7 +60,7 @@ public abstract class FriskyFade {
         startFade(drawable,Duration);
     }
 
-    public static void InfiniteRepeat(Bitmap bitmap[], Activity activity, int IdOfView, final int Duration)
+    public  void InfiniteRepeat(Bitmap bitmap[], Activity activity, int IdOfView, final int Duration)
     {
         LAST_FLAG_VALUE=bitmap.length;
         view=activity.findViewById(IdOfView);
@@ -65,12 +71,8 @@ public abstract class FriskyFade {
         }
         startFade(drawable,Duration);
     }
-    private static void startFade(final Drawable drawable[],final int Duration)
+    private  void startFade(final Drawable drawable[],final int Duration)
     {
-
-
-        view.setBackground(drawable[0]);
-
 
             runnable2=new Runnable() {
                 @Override
@@ -98,13 +100,11 @@ public abstract class FriskyFade {
 
     }
 
-    private static void StopOnLastElementExecute(final Drawable drawable[],final int Duration)
+    private  void StopOnLastElementExecute(final Drawable drawable[],final int Duration)
     {
 
 
-        view.setBackground(drawable[0]);
-
-
+      //  view.setBackground(drawable[0]);
         runnable2=new Runnable() {
             @Override
             public void run() {
@@ -123,6 +123,9 @@ public abstract class FriskyFade {
                     view.setAlpha(0);
                     view.animate().alpha(1).setDuration(Duration).withEndAction(runnable2).setInterpolator(new LinearInterpolator()).start();
 
+                }
+                else {
+                    FLAG=0;
                 }
 
             }
