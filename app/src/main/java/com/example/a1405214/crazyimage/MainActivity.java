@@ -1,24 +1,17 @@
 package com.example.a1405214.crazyimage;
 
-import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
-import android.graphics.drawable.BitmapDrawable;
-import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 import android.view.animation.LinearInterpolator;
 import android.widget.Button;
-import android.widget.GridLayout;
-import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -26,6 +19,7 @@ import dwijraj.FriskyAnim.FriskyBounce;
 import dwijraj.FriskyAnim.FriskyFade;
 import dwijraj.FriskyAnim.FriskyRain;
 import dwijraj.FriskyAnim.FriskyTanslations;
+import dwijraj.FriskyToast.FriskyToast;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -60,8 +54,7 @@ public class MainActivity extends AppCompatActivity {
         Image=(ImageView) findViewById(R.id.Image1);
 
 
-
-
+        FriskyToast.warning(MainActivity.this,"Hello", Toast.LENGTH_SHORT).show();
 
 
         Fade=(Button) findViewById(R.id.fade);
@@ -103,14 +96,6 @@ public class MainActivity extends AppCompatActivity {
 
 
               Image.animate().alpha(0).setDuration(3000).setInterpolator(new LinearInterpolator()).withEndAction(runnable1).start();
-            }
-        });
-        Base64Encode.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-
             }
         });
 

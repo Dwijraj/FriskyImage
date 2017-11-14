@@ -4,13 +4,13 @@ import android.app.Activity;
 import android.view.View;
 import android.view.animation.LinearInterpolator;
 
-import dwijraj.FriskyRotation.FriskyRotateImageViewBy;
+import dwijraj.FriskyRotation.FriskyRotateViewBy;
 
 /**
  * Created by 1405214 on 29-03-2017.
  */
 
-public class FriskyRotating extends FriskyRotateImageViewBy {
+public class FriskyRotating extends FriskyRotateViewBy {
 
     protected View imageView;
     protected Runnable runnable2;
