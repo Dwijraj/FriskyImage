@@ -287,6 +287,9 @@
 
                     </LinearLayout>
 
+
+
+
                 </LinearLayout>
 
 
@@ -460,6 +463,21 @@
                     android:id="@+id/random_view"
                     android:text="MIXPLAY"
                     android:layout_height="wrap_content" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <dwijraj.FriskyView.FriskyFriskyShimmerTextView
+                    android:layout_width="match_parent"
+                    android:text="Hello world I am working"
+                    android:textSize="23sp"
+                    android:gravity="center"
+                    android:id="@+id/FriskyShimmer"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:layout_height="120dp" />
 
             </LinearLayout>
 

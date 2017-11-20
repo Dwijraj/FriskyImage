@@ -20,6 +20,8 @@ import dwijraj.FriskyAnim.FriskyFade;
 import dwijraj.FriskyAnim.FriskyRain;
 import dwijraj.FriskyAnim.FriskyTanslations;
 import dwijraj.FriskyToast.FriskyToast;
+import dwijraj.FriskyView.FriskyFriskyShimmerTextView;
+import dwijraj.FriskyView.FriskyShimmer;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -34,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
     private Button GetScaledimage;
     private LinearLayout layout;
     public static TextView textView;
+    private FriskyShimmer shimmer;
+    private FriskyFriskyShimmerTextView textView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,13 +52,16 @@ public class MainActivity extends AppCompatActivity {
         GetScaledimage=(Button) findViewById(R.id.GetCustomScaledImage);
         GetScaledImages=(Button) findViewById(R.id.GetScaledImage);
         textView=(TextView) findViewById(R.id.TextView);
-        Base64Encode=(Button) findViewById(R.id.Encode64);
         QRCodencode=(Button) findViewById(R.id.QRcodeencode);
         layout=(LinearLayout) findViewById(R.id.RootLayoutId);
         Image=(ImageView) findViewById(R.id.Image1);
-
+        textView2=(FriskyFriskyShimmerTextView) findViewById(R.id.FriskyShimmer);
 
         FriskyToast.warning(MainActivity.this,"Hello", Toast.LENGTH_SHORT).show();
+
+        shimmer=new FriskyShimmer();
+        shimmer.setDuration(5000);
+        shimmer.start(textView2);
 
 
         Fade=(Button) findViewById(R.id.fade);
