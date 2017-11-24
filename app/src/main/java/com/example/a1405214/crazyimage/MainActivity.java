@@ -49,10 +49,7 @@ public class MainActivity extends AppCompatActivity {
         final Bitmap bitmap= BitmapFactory.decodeResource(getResources(),R.drawable.call);
 
 
-        GetScaledimage=(Button) findViewById(R.id.GetCustomScaledImage);
-        GetScaledImages=(Button) findViewById(R.id.GetScaledImage);
         textView=(TextView) findViewById(R.id.TextView);
-        QRCodencode=(Button) findViewById(R.id.QRcodeencode);
         layout=(LinearLayout) findViewById(R.id.RootLayoutId);
         Image=(ImageView) findViewById(R.id.Image1);
         textView2=(FriskyFriskyShimmerTextView) findViewById(R.id.FriskyShimmer);
@@ -106,46 +103,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        QRCodencode.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
 
-
-
-            }
-        });
-        GetScaledimage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-            }
-        });
-
-        GetScaledImages.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                Image.setBackgroundColor(Color.BLACK);
-            }
-        });
-
-        ((Button) findViewById(R.id.scaledImages)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-            }
-        });
-
-        ((Button)findViewById(R.id.GetCustomScaledImage)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-            }
-        });
 
         ((Button) findViewById(R.id.RotateAntiClock)).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -156,13 +115,29 @@ public class MainActivity extends AppCompatActivity {
                 Wheel1.StartRotationClockWise();
                 Wheel2.StartRotationClockWise();
                 FriskyTanslations Car=new FriskyTanslations(MainActivity.this,R.id.car);
-                Car.MoveXBy(140,3000);
-                Wheel1.MoveXBy(140,3000,true);
-                Wheel2.MoveXBy(140,3000,true);
+                Car.MoveXBy(-140,3000);
+                Wheel1.MoveXBy(-140,3000,true);
+                Wheel2.MoveXBy(-140,3000,true);
 
 
             }
         });
+
+        findViewById(R.id.tost).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                FriskyToast.warning(MainActivity.this,"WarningToast",Toast.LENGTH_SHORT).show();
+                FriskyToast.success(MainActivity.this,"Successs",Toast.LENGTH_SHORT).show();
+                FriskyToast.info(MainActivity.this,"Info",Toast.LENGTH_SHORT).show();
+                FriskyToast.error(MainActivity.this,"Error",Toast.LENGTH_SHORT).show();
+                FriskyToast.custom(MainActivity.this,"CustomToast",R.drawable.ic_launcher,Color.BLACK,3000,true,true).show();
+               // FriskyToast.custom(MainActivity.this,"customToast",Toast.LENGTH_SHORT).show();
+
+            }
+        });
+
+
         findViewById(R.id.random_view).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -177,44 +152,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ((Button) findViewById(R.id.Oscillate)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-
-            }
-        });
-        ((Button) findViewById(R.id.customOscillation)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-
-            }
-        });
-        ((Button) findViewById(R.id.StopCrazyRotation)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-            }
-        });
-
-        ((Button) findViewById(R.id.StopCrazyRotationAtCustomAngle)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                           }
-        });
-        ((Button) findViewById(R.id.TranslateX)).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-
-
-            }
-        });
         ((Button) findViewById(R.id.Bounce)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -224,13 +161,6 @@ public class MainActivity extends AppCompatActivity {
 
 
             }
-        });
-
-        findViewById(R.id.BlackandWhite).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-
-                  }
         });
 
         findViewById(R.id.RainStart).setOnClickListener(new View.OnClickListener() {

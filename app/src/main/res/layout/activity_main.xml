@@ -331,21 +331,6 @@
                     android:text="ROTATEIMAGEBY" />
 
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
-                <Button
-                    android:id="@+id/QRcodeencode"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="LOSSLESS COMPRESSION" />
-
-
-            </LinearLayout>
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -353,32 +338,10 @@
                 android:orientation="horizontal">
 
                 <Button
-
-                    android:id="@+id/GetScaledImage"
+                    android:id="@+id/tost"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Get Scaled Images" />
-
-                <Button
-                    android:id="@+id/GetCustomScaledImage"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="CustomizedSize" />
-
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/scaledImages"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Get Custom Scaled Images" />
+                    android:text="Toast" />
 
                 <Button
                     android:id="@+id/RotateAntiClock"
@@ -389,26 +352,6 @@
 
             </LinearLayout>
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/Oscillate"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Oscillation" />
-
-                <Button
-                    android:id="@+id/customOscillation"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Custom Oscillation" />
-
-
-            </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
