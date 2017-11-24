@@ -1,16 +1,13 @@
 # FriskyImage
 This is an android library which help to do frisky stuffs with your ImageViews
-Include this line on your app level build.gradle file under <b>dependencies</b> </br>
-<code>
-	compile 'dwijrajbhattacharyya.FriskyImage:FriskyImage:2.0.0'
-</code>
-</br>
+Include this line on your app level build.gradle file under <b>dependencies</b> 
+        <code>compile 'dwijrajbhattacharyya.FriskyImage:FriskyImage:2.0.0'</code>
 <img src="API.gif" alt="imageNotFound">
 <h1> How to integrate them ^ </h1>
 	<h4> Moving Car </h4>
 	The moving car animation is a customization done using various API's provided by this library 
 	here is the XML code
-	<code>
+		 <code>
 			 <FrameLayout
                             android:layout_weight="50"
                             android:layout_width="0dp"
@@ -39,7 +36,7 @@ Include this line on your app level build.gradle file under <b>dependencies</b> 
                                 app:civ_border_color="#FF000000"
                                 app:civ_border_width="2dp" />
                         </FrameLayout>
-	</code>
+		</code>
 		Here's the Java code to run car using Various APIs
 		<code>
 	        FriskyTanslations Wheel1=new FriskyTanslations(MainActivity.this,R.id.Image1);
@@ -58,22 +55,19 @@ Include this line on your app level build.gradle file under <b>dependencies</b> 
 	<h4> Colliding Animation! </h4>
 		The colliding animation provides 2 default colliding animations namely FriskyBounce,CrazyBounce which have more Subdivision's 
 		as visible on the video each animation can be done in just a few lines exmaple
-	<code>
-		FriskyBounce friskyBounce1=new FriskyBounce(MainActivity.this,R.id.RootId123,R.id.ID1234ID);
+	  <code>
+	        FriskyBounce friskyBounce1=new FriskyBounce(MainActivity.this,R.id.RootId123,R.id.ID1234ID);
                 FriskyBounce friskyBounce2=new FriskyBounce(MainActivity.this,R.id.RootId123,R.id.ID1235ID);
                 FriskyBounce friskyBounce3=new FriskyBounce(MainActivity.this,R.id.RootId123,R.id.ID1236ID);
                 friskyBounce1.StartCrazyBounce1(3000);
                 friskyBounce2.StartCrazyBounce2(3000);
-                friskyBounce3.StartBounce(5000,3000);				
+                friskyBounce3.StartBounce(5000,3000);
 		FriskyBounce friskyBounce=new FriskyBounce(MainActivity.this,R.id.RootId123,R.id.ID123ID);
-                friskyBounce.StartCrazyBounce3(3000);
-		
-	</code>	
-	
+                friskyBounce.StartCrazyBounce3(3000);	
+	  </code>	
 		Just create an object on FriskyBounce with Context,RootLayout and the view to be animated's ID and tune parameter's 
 		to integrate them !
 		Also you can customize them as visible on the video
-	
 	<h4> Rain animation </h4>
 		Here's the code to integrate rain
 	<code>
@@ -101,7 +95,7 @@ Include this line on your app level build.gradle file under <b>dependencies</b> 
             FriskyToast.info(MainActivity.this,"Info",Toast.LENGTH_SHORT).show();
             FriskyToast.error(MainActivity.this,"Error",Toast.LENGTH_SHORT).show();
             FriskyToast.custom(MainActivity.this,"CustomToast",R.drawable.ic_launcher,Color.BLACK,3000,true,true).show();
-      </code> 	 
+       </code> 	 
 		Code is similar to android's default toast with the exception of FriskyToast.custom where you need to pass more 
 		values like Icon IconTnt TextTnt Duration and two boolean
 	<h6>FriskyShimmer</h6>
@@ -121,8 +115,8 @@ Include this line on your app level build.gradle file under <b>dependencies</b> 
 	</code>	
 	JAVA code
 	<code>
-	shimmerTextView=(FriskyFriskyShimmerTextView) findViewById(R.id.FriskyShimmer);
-	FriskyShimmer shimmer=new FriskyShimmer();
+	    shimmerTextView=(FriskyFriskyShimmerTextView) findViewById(R.id.FriskyShimmer);
+		FriskyShimmer shimmer=new FriskyShimmer();
         shimmer.setDuration(5000);
         shimmer.start(shimmerTextView);
 	</code>	
