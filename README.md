@@ -4,22 +4,8 @@ Include this line on your app level build.gradle file under <b>dependencies</b> 
 <code>compile 'dwijrajbhattacharyya.FriskyImage:FriskyImage:2.0.0'</code> </BR>
 
 <br/>
-<p>
-To download the library from Maven add these lines
-</p>
-```xml
-					<dependency>
-						<groupId>dwijrajbhattacharyya.FriskyImage</groupId>
-						<artifactId>FriskyImage</artifactId>
-						<version>2.0.0</version>
-						<type>pom</type>
-					</dependency>
-					
-```
-
-
 <img src="API.gif" alt="imageNotFound">
-<h1> How to integrate them ^ </h1>
+<h1> How to integrate them  </h1>
 	<h4> Moving Car </h4>
 	The moving car animation is a customization done using various API's provided by this library here is the XML Here's the java code to run car using Various APIs
 
@@ -141,6 +127,7 @@ For Textview
 XML 
 
 ```xml
+
 		   <dwijraj.FriskyView.FriskyFriskyShimmerTextView
                     android:layout_width="match_parent"
                     android:text="Hello world I am working"
@@ -159,10 +146,12 @@ Java code
 ```	
 <h4> Change Image Property </h4>
 To change the property of the Image like contrast, brightness or converting them into black and white without freezing your application
+
 ```java
-		FriskyImageProperty.FriskyEnhanceImage(Bitmap bitmap,int ContrastValue,int BrightnessValue);
+		
+        FriskyImageProperty.FriskyEnhanceImage(Bitmap bitmap,int ContrastValue,int BrightnessValue);
 		FriskyImageProperty.FriskyContrastChange(Bitmap bitmap,int ContrastValue);
 		FriskyImageProperty.FriskyBrightnessChange(Bitmap bitmap,int BrightnessValue);
 		FriskyImageProperty.FriskyBlackandWhite(Bitmap bitmap);
-		   
+```		   
 ```
