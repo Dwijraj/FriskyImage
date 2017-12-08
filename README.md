@@ -8,8 +8,8 @@ Include this line on your app level build.gradle file under <b>dependencies</b> 
 	The moving car animation is a customization done using various API's provided by this library here is the XML Here's the java code to run car using Various APIs
 
 ```xml
-						<FrameLayout
-                         	android:layout_weight="50"
+		       <FrameLayout
+                            android:layout_weight="50"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content">
                             <ImageView
@@ -39,12 +39,12 @@ Include this line on your app level build.gradle file under <b>dependencies</b> 
 
 ```
 ```java
-						FriskyTanslations Wheel1=new FriskyTanslations(MainActivity.this,R.id.Image1);
+		FriskyTanslations Wheel1=new FriskyTanslations(MainActivity.this,R.id.Image1);
 ```		
 Here's the java code to run car using Various APIs
 	
 ```java
-				FriskyTanslations Wheel1=new FriskyTanslations(MainActivity.this,R.id.Image1);
+		FriskyTanslations Wheel1=new FriskyTanslations(MainActivity.this,R.id.Image1);
                 FriskyTanslations Wheel2=new FriskyTanslations(MainActivity.this,R.id.Image2);
                 Wheel1.StartRotationClockWise();
                 Wheel2.StartRotationClockWise();
@@ -63,17 +63,17 @@ The colliding animation provides 2 default colliding animations namely FriskyBou
 		as visible on the video each animation can be done in just a few lines exmaple
 
 ```java
-				FriskyBounce friskyBounce1=new 			     	 
-				FriskyBounce(MainActivity.this,R.id.RootId123,R.id.ID1234ID);
-				FriskyBounce friskyBounce1=new FriskyBounce(MainActivity.this,R.id.RootId123,R.id.ID1234ID);
+		FriskyBounce friskyBounce1=new 			     	 
+		FriskyBounce(MainActivity.this,R.id.RootId123,R.id.ID1234ID);
+		FriskyBounce friskyBounce1=new FriskyBounce(MainActivity.this,R.id.RootId123,R.id.ID1234ID);
                 FriskyBounce friskyBounce2=new FriskyBounce(MainActivity.this,R.id.RootId123,R.id.ID1235ID);
                 FriskyBounce friskyBounce3=new FriskyBounce(MainActivity.this,R.id.RootId123,R.id.ID1236ID);
                 friskyBounce1.StartCrazyBounce1(3000);
                 friskyBounce2.StartCrazyBounce2(3000);
                 friskyBounce3.StartBounce(5000,3000);				
-				FriskyBounce friskyBounce=new FriskyBounce(MainActivity.this,R.id.RootId123,R.id.ID123ID);
+		FriskyBounce friskyBounce=new FriskyBounce(MainActivity.this,R.id.RootId123,R.id.ID123ID);
                 friskyBounce.StartCrazyBounce3(3000);
-				FriskyBounce friskyBounce=new FriskyBounce(MainActivity.this,R.id.RootId123,R.id.ID123ID);
+		FriskyBounce friskyBounce=new FriskyBounce(MainActivity.this,R.id.RootId123,R.id.ID123ID);
                 friskyBounce.StartCrazyBounce3(3000);
 ```
 Just create an object on FriskyBounce with Context,RootLayout and the view to be animated's ID and tune parameter's 
@@ -87,7 +87,7 @@ Also you can customize them as visible on the video
 Here's the code to integrate rain
         
 ```java 
-          new FriskyRain().StartRain(R.drawable.rain_drop,R.id.Root1235,-10,MainActivity.this); 
+                  new FriskyRain().StartRain(R.drawable.rain_drop,R.id.Root1235,-10,MainActivity.this); 
 ```
 
 Just send the raindrop's image the layout on which the rain animation is to be carried out 
@@ -110,11 +110,11 @@ there are 5 default flavours of FriskyToast namely Successs,info,error success,W
 function by passing various values
 
 ```java     
-			FriskyToast.warning(MainActivity.this,"WarningToast",Toast.LENGTH_SHORT).show();
-            FriskyToast.success(MainActivity.this,"Successs",Toast.LENGTH_SHORT).show();
-            FriskyToast.info(MainActivity.this,"Info",Toast.LENGTH_SHORT).show();
-            FriskyToast.error(MainActivity.this,"Error",Toast.LENGTH_SHORT).show();
-            FriskyToast.custom(MainActivity.this,"CustomToast",R.drawable.ic_launcher,Color.BLACK,3000,true,true).show();
+	           FriskyToast.warning(MainActivity.this,"WarningToast",Toast.LENGTH_SHORT).show();
+                   FriskyToast.success(MainActivity.this,"Successs",Toast.LENGTH_SHORT).show();
+                   FriskyToast.info(MainActivity.this,"Info",Toast.LENGTH_SHORT).show();
+                   FriskyToast.error(MainActivity.this,"Error",Toast.LENGTH_SHORT).show();
+            	   FriskyToast.custom(MainActivity.this,"CustomToast",R.drawable.ic_launcher,Color.BLACK,3000,true,true).show();
 ```	 
 This is similar to android's default toast with the exception of FriskyToast.custom where you need to pass more 
 		values like Icon IconTnt TextTnt Duration and two boolean
@@ -136,8 +136,8 @@ XML
 ```	
 Java code
 ```java
-	    shimmerTextView=(FriskyFriskyShimmerTextView) findViewById(R.id.FriskyShimmer);
-		FriskyShimmer shimmer=new FriskyShimmer();
-        shimmer.setDuration(5000);
-        shimmer.start(shimmerTextView);
+		    shimmerTextView=(FriskyFriskyShimmerTextView) findViewById(R.id.FriskyShimmer);
+		    FriskyShimmer shimmer=new FriskyShimmer();
+        	    shimmer.setDuration(5000);
+        	    shimmer.start(shimmerTextView);
 ```	
