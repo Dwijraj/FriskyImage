@@ -1,7 +1,7 @@
 # FriskyImage
 This is an android library which help to do frisky stuffs with your ImageViews
 Include this line on your app level build.gradle file under <b>dependencies</b> </BR>
-<code>compile 'dwijrajbhattacharyya.FriskyImage:FriskyImage:2.0.0'</code> </BR>
+<code>compile 'dwijrajbhattacharyya.FriskyImage:FriskyImage:2.0.1'</code> </BR>
 
 <br/>
 <img src="API.gif" alt="imageNotFound">
