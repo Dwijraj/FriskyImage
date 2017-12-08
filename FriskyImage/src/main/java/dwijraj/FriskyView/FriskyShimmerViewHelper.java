@@ -10,12 +10,7 @@ import android.view.View;
 
 import com.example.crazyimage.R;
 
-/**
- * FriskyShimmer
- * User: romainpiel
- * Date: 10/03/2014
- * Time: 17:06
- */
+
 public class FriskyShimmerViewHelper {
 
     public interface AnimationSetupCallback {

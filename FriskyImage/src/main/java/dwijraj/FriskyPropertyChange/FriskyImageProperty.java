@@ -17,7 +17,7 @@ import android.widget.ImageView;
 public abstract class  FriskyImageProperty {
 
 
-    public  Bitmap FriskyEnhanceImage(Bitmap mBitmap, float contrast, float brightness) {
+    public static  Bitmap FriskyEnhanceImage(Bitmap mBitmap, float contrast, float brightness) {
         ColorMatrix cm = new ColorMatrix(new float[]
                 {
                         contrast, 0, 0, 0, brightness,
@@ -34,7 +34,7 @@ public abstract class  FriskyImageProperty {
         return BrightedImage;
     }
 
-    public Bitmap FriskyContrast(Bitmap bitmap,int Value)
+    public static Bitmap FriskyContrast(Bitmap bitmap,int Value)
     {
         ColorMatrix colorMatrix = new ColorMatrix();
         colorMatrix.set(new float[] {
@@ -54,7 +54,7 @@ public abstract class  FriskyImageProperty {
     }
 
 
-    public  Bitmap FriskyBright(Bitmap mBitmap,int fb) {
+    public static   Bitmap FriskyBright(Bitmap mBitmap,int fb) {
         ColorMatrix colorMatrix = new ColorMatrix();
          colorMatrix.set(new float[] {
                 1, 0, 0, 0, fb,
@@ -71,7 +71,7 @@ public abstract class  FriskyImageProperty {
         return BrightedImage;
 
     }
-    public static   Bitmap FriskyBlackandWhite(Bitmap src){
+    public static    Bitmap FriskyBlackandWhite(Bitmap src){
 
         Bitmap dest = Bitmap.createBitmap(
                 src.getWidth(), src.getHeight(), src.getConfig());
