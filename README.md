@@ -8,7 +8,7 @@ Include this line on your app level build.gradle file under <b>dependencies</b> 
 	The moving car animation is a customization done using various API's provided by this library here is the XML Here's the java code to run car using Various APIs
 
 ```xml
- 				<FrameLayout
+						<FrameLayout
                          	android:layout_weight="50"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content">
@@ -39,12 +39,12 @@ Include this line on your app level build.gradle file under <b>dependencies</b> 
 
 ```
 ```java
-			    FriskyTanslations Wheel1=new FriskyTanslations(MainActivity.this,R.id.Image1);
+						FriskyTanslations Wheel1=new FriskyTanslations(MainActivity.this,R.id.Image1);
 ```		
 Here's the java code to run car using Various APIs
 	
 ```java
-	        FriskyTanslations Wheel1=new FriskyTanslations(MainActivity.this,R.id.Image1);
+				FriskyTanslations Wheel1=new FriskyTanslations(MainActivity.this,R.id.Image1);
                 FriskyTanslations Wheel2=new FriskyTanslations(MainActivity.this,R.id.Image2);
                 Wheel1.StartRotationClockWise();
                 Wheel2.StartRotationClockWise();
@@ -63,9 +63,9 @@ The colliding animation provides 2 default colliding animations namely FriskyBou
 		as visible on the video each animation can be done in just a few lines exmaple
 
 ```java
-		FriskyBounce friskyBounce1=new 			     	 FriskyBounce(MainActivity.this,R.id.RootId123,R.id.ID1234ID);
-	  
-	        FriskyBounce friskyBounce1=new FriskyBounce(MainActivity.this,R.id.RootId123,R.id.ID1234ID);
+				FriskyBounce friskyBounce1=new 			     	 
+				FriskyBounce(MainActivity.this,R.id.RootId123,R.id.ID1234ID);
+				FriskyBounce friskyBounce1=new FriskyBounce(MainActivity.this,R.id.RootId123,R.id.ID1234ID);
                 FriskyBounce friskyBounce2=new FriskyBounce(MainActivity.this,R.id.RootId123,R.id.ID1235ID);
                 FriskyBounce friskyBounce3=new FriskyBounce(MainActivity.this,R.id.RootId123,R.id.ID1236ID);
                 friskyBounce1.StartCrazyBounce1(3000);
@@ -109,7 +109,8 @@ Customize the Boring Deafult Android Toast and notch up your application by writ
 there are 5 default flavours of FriskyToast namely Successs,info,error success,Warning and also customizable 
 function by passing various values
 
-```java            FriskyToast.warning(MainActivity.this,"WarningToast",Toast.LENGTH_SHORT).show();
+```java     
+			FriskyToast.warning(MainActivity.this,"WarningToast",Toast.LENGTH_SHORT).show();
             FriskyToast.success(MainActivity.this,"Successs",Toast.LENGTH_SHORT).show();
             FriskyToast.info(MainActivity.this,"Info",Toast.LENGTH_SHORT).show();
             FriskyToast.error(MainActivity.this,"Error",Toast.LENGTH_SHORT).show();
