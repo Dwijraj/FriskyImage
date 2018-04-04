@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="com.example.a1405214.crazyimage.Main2">
+
+  <!--  <dwijraj.FriskySpeedo.speedviewlib.ProgressiveGauge
+        android:layout_width="wrap_content"
+        android:id="@+id/Gauge"
+        android:layout_height="wrap_content" /> -->
+
+    <ImageView
+        android:layout_width="50dp"
+        android:id="@+id/image1"
+        android:src="@drawable/call"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:text="Call"
+        android:id="@+id/Text1"
+        android:layout_height="wrap_content" />
+
+    <dwijraj.FriskySpeedo.speedviewlib.SpeedView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
