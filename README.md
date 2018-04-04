@@ -5,7 +5,7 @@ Include this line on your app level build.gradle file under <b>dependencies</b> 
 
 <br/>
 <img src="API.gif" alt="imageNotFound">
-#Version 1.0.0
+<h2> Version 1.0.0          </h2> 
 <h1> How to integrate them  </h1>
 	<h4> Moving Car </h4>
 	The moving car animation is a customization done using various API's provided by this library here is the XML Here's the java code to run car using Various APIs
@@ -170,40 +170,61 @@ Memory leak is a problem associated with garbage collection of android.Sometimes
 ### Integrating Speedometer
 XML Code
 
+
 <img src="Speedometer.PNG" alt="imageNotFound">
+
+
 ```xml
 	<dwijraj.FriskySpeedo.speedviewlib.speedview
 	android:id="@+id/speedView"
     android:layout_width="300dp"
     android:layout_height="wrap_content" />
 ```
+
+
 Java code
+
+
 ```java			
         SpeedView speedView = (SpeedView) findViewById(R.id.speedView);
         speedView.setMaxSpeed(320);
         speedView.speedTo(32.0);
 ```
 
+
 ### Integrating Gauge
 XML Code
 
+
 <img src="Gauge.PNG" alt="imageNotFound">
+
+
 ```xml
 	  <dwijraj.FriskySpeedo.speedviewlib.progressivegauge
       android:id="@+id/progressivegauge "
       android:layout_width="300dp"
       android:layout_height="wrap_content" />
 ```
+
+
 Java code
+
+
 ```java			
        ProgressiveGauge progressiveGauge= (ProgressiveGauge)findViewById(R.id.progressivegauge);
        progressiveGauge.speedTo(50);
 ``` 
 
+
 ### Integrating Long Shadow
 
+
 <img src="Longshadow.png" alt="imageNotFound">
+
+
 XML Code
+
+
 ```xml
       <dwijraj.FriskyImageEnhancer.LongShadow 
         android:layout_width="match_parent"
@@ -227,12 +248,18 @@ XML Code
        </dwijraj.FriskyImageEnhancer.LongShadow >
 ```	
 
+
 ### Integrating Tooltip
 
 
 <img src="Tooltip.png" alt="imageNotFound">
-XML Code
+
+
+Java Code
+
+
 ```java
+
 		ViewTooltip
         .on(this, editText)
         .autoHide(true, 1000)
@@ -241,6 +268,7 @@ XML Code
         .text(editText.getText().toString())
         .show();
 ```
+
 
 ### Integrating view animator
 
