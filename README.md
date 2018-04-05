@@ -296,3 +296,8 @@ Think of it as a machine which takes as input commands like “ Rotate this imag
 # Future work 
 
 In future we will try to add Kotlin version to it so that Kotlin developers can also leverage this library and create beautiful apps
+
+# Apps built using this Library
+
+Super Chef 
+https://play.google.com/store/apps/details?id=com.dwijraj.superchef
